@@ -6,7 +6,7 @@
 /*   By: mkootstr <mkootstr@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/01/25 01:53:41 by mkootstr      #+#    #+#                 */
-/*   Updated: 2023/01/25 03:01:36 by mkootstr      ########   odam.nl         */
+/*   Updated: 2023/01/25 11:57:02 by mkootstr      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ t_check	*makecheck(void)
 {
 	t_check	*check2;
 
-	check2 = malloc(1 * sizeof(t_check));
+	check2 = ft_malloc(1 * sizeof(t_check));
 	check2->background = 0;
 	check2->player = 0;
 	check2->wall = 0;

@@ -6,7 +6,7 @@
 /*   By: mkootstr <mkootstr@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/01/24 16:36:41 by mkootstr      #+#    #+#                 */
-/*   Updated: 2023/01/25 02:56:55 by mkootstr      ########   odam.nl         */
+/*   Updated: 2023/01/25 11:55:21 by mkootstr      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,5 +108,6 @@ void	set_null(t_data *data);
 void	fatal(char *str);
 int		ft_open(char *str);
 int		ft_close(int fd);
+void	*ft_malloc(size_t size);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: mkootstr <mkootstr@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/01/25 00:58:34 by mkootstr      #+#    #+#                 */
-/*   Updated: 2023/01/25 04:29:04 by mkootstr      ########   odam.nl         */
+/*   Updated: 2023/01/25 11:55:47 by mkootstr      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,4 +41,17 @@ int	ft_close(int fd)
 			fatal("close error\n");
 	}
 	return (rv);
+}
+
+void *ft_malloc(size_t size)
+{
+	void *ptr;
+
+	ptr = malloc(size);
+	if (!ptr)
+	{
+		fatal("malloc fail\n");
+		return (NULL);
+	}
+	return (ptr);
 }

@@ -6,7 +6,7 @@
 /*   By: mkootstr <mkootstr@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/01/25 00:55:58 by mkootstr      #+#    #+#                 */
-/*   Updated: 2023/01/25 04:35:03 by mkootstr      ########   odam.nl         */
+/*   Updated: 2023/01/25 11:56:06 by mkootstr      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	main(int argc, char *argv[])
 	t_data	*data;
 
 	check = makecheck();
-	data = malloc(1 * sizeof(t_data));
+	data = ft_malloc(1 * sizeof(t_data));
 	data->check = check;
 	check->maparray = NULL;
 	if (argc != 2)
@@ -29,7 +29,7 @@ int	main(int argc, char *argv[])
 	check->height = get_size(fd);
 	ft_close(fd);
 	fd = ft_open(argv[1]);
-	check->maparray = malloc((check->height + 1) * sizeof(char *));
+	check->maparray = ft_malloc((check->height + 1) * sizeof(char *));
 	check->maparray[check->height] = NULL;
 	check->maparray = takemap(check->maparray, fd);
 	ft_close(fd);
