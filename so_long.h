@@ -6,7 +6,7 @@
 /*   By: mkootstr <mkootstr@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/01/24 16:36:41 by mkootstr      #+#    #+#                 */
-/*   Updated: 2023/01/25 11:55:21 by mkootstr      ########   odam.nl         */
+/*   Updated: 2023/01/25 12:02:31 by mkootstr      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 # include <stdlib.h>
 # include <stdio.h>
 # include <unistd.h>
-# include <errno.h>
 # include "Libft/libft.h"
 
 typedef struct s_check
